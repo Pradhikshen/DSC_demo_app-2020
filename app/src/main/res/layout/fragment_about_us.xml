@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+    <ImageView
+        android:id="@+id/dsc_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:src="@drawable/img_dsc"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/text_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:textColor="#0A0A0A"
+        android:layout_marginRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="Developer Student Clubs is a community where everyone is welcome.We help students bridge the gap between theory and practise and grow their knowledge by providing a peer-to-peer learning environment, by conducting workshops, study jams and building solutions for local buisnesses. Developer Student Clubs is a program supported by Google Developers."
+        android:layout_below="@+id/dsc_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit dscsastra.com"
+        android:textColor="#8484FF"
+        android:layout_below="@+id/text_about_us"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/url_outline"
+        android:layout_margin="50dp"/>
+
+
+</RelativeLayout>
